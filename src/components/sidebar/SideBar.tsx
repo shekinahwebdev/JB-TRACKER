@@ -6,8 +6,8 @@ import { useContext, type ReactNode } from "react";
 const SideBar = ({ children }: { children: ReactNode }) => {
   const { expanded, handleExpand } = useContext(SidebarContext);
   return (
-    <aside className="h-screen">
-      <nav className="h-full flex flex-col border-r border-white/25 bg-white shadow-md p-5 rounded-l-xl">
+    <aside className="h-screen border-r border-white/25 shadow-md rounded-l-xl">
+      <nav className="h-full flex flex-col  bg-white p-5 rounded-l-xl">
         <div className="p-6 flex items-center justify-between gap-10">
           <p
             className={`font-bold text-xl text-orange-600 transition-all ${
