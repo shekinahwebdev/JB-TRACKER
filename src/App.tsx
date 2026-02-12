@@ -1,5 +1,11 @@
+import DashBoard from "./pages/DashBoard";
+
 const App = () => {
-  return <div>App</div>;
+  return (
+    <div className="w-full  min-h-screen bg-white rounded-xl">
+      <DashBoard />
+    </div>
+  );
 };
 
 export default App;
