@@ -2,7 +2,7 @@
 
 JB tracker is a web-base dashboard that helps job seekers organize, track,manage, reflect on their job applications across multiple platforms. It provides a centralized platform for users to input and manage their job applications, set reminders for follow-ups, and analyze their job search progress.
 
-# Who is it for?
+## Who is it for?
 
 - Students
 - Intern seekers
@@ -10,7 +10,7 @@ JB tracker is a web-base dashboard that helps job seekers organize, track,manage
 - Career switchers
 - Anyone applying to multiple jobs weekly
 
-# Problem statement
+## Problem statement
 
 Most job seekers apply to multiple jobs across various platforms, making it difficult to keep track of their applications, follow-ups, and progress. This can lead to missed opportunities, disorganization, and a lack of insight into their job search efforts.
 People literally use:
@@ -19,7 +19,7 @@ People literally use:
 - Google Sheets
 - WhatsApp messages
 
-# TOOL STACK
+## TOOL STACK
 
 - React for frontend
 - Tailwind CSS for styling
@@ -30,9 +30,9 @@ People literally use:
 - Custom Hooks for reusable logic
 - Framer Motion for animations
 
-# FEATURE TOOL STACK
+## FEATURE TOOL STACK
 
-# SOON TO BE ADDED
+### SOON TO BE ADDED
 
 - Node.js with Express for backend
 - MongoDB for database
@@ -41,13 +41,13 @@ People literally use:
 
 ## MVP Features
 
-# Application Management
+## Application Management
 
 - Add a job application
 - Edit an application
 - Delete an application
 
-# Fields per application
+## Fields per application
 
 - Company name
 - Job title / role
@@ -59,37 +59,37 @@ People literally use:
 - Date applied
 - Source (LinkedIn, Indeed, Company Website, Referral)
 
-# Application List View
+## Application List View
 
 - View all applications in one dashboard
 - See status at a glance
 - Sort by date or status
 
-# Status Updates
+## Status Updates
 
 - Change status without deleting/re-adding
 - Quick updates (dropdown or buttons)
 
-# ORGANIZATION & CLARITY
+## ORGANIZATION & CLARITY
 
-# Filtering
+## Filtering
 
 - Filter by status (e.g. show only interviews)
 - Filter by source
 - Filter by role
 
-# Search
+## Search
 
 - Search by company name
 - Search by job title
 
-# Timeline Awareness
+## Timeline Awareness
 
 - See when you applied
 - Identify old applications
 - Know when to follow up
 
-# USER EXPERIENCE
+## USER EXPERIENCE
 
 - Clean Dashboard
 - Sidebar navigation
@@ -106,7 +106,7 @@ People literally use:
 - “No applications yet” screen
 - Friendly onboarding message
 
-# INSIGHT & REFLECTION (WHAT MAKES IT POWERFUL)
+## INSIGHT & REFLECTION (WHAT MAKES IT POWERFUL)
 
 - Basic Analytics
 - Total applications
@@ -114,12 +114,12 @@ People literally use:
 - Rejections
 - Conversion rate
 
-# Patterns
+## Patterns
 
 - Which roles get responses?
 - Which platforms work best?
 
-# DATA PERSISTENCE
+## DATA PERSISTENCE
 
 Local storage
 
@@ -139,13 +139,13 @@ AI Integration
 • Tailored resume suggestions
 • Application strategy insights
 
-# Recommended Sidebar Structure (MVP)
+## Recommended Sidebar Structure (MVP)
 
-# Dashboard
+## Dashboard
 
 Purpose: Overview
 
-# Shows:
+### Shows:
 
     - Total applications
     - Interviews
@@ -154,7 +154,7 @@ Purpose: Overview
 
 This is the “home”.
 
-# Applications
+### Applications
 
 Purpose: Main working area
 
@@ -165,7 +165,7 @@ This is where users:
 - Edit/delete
 - Filter & search
 
-# Insights (or Analytics)
+## Insights (or Analytics)
 
 Purpose: Reflection
 
@@ -175,7 +175,7 @@ Shows:
 - Trends
 - Platform performance
 
-# Settings (optional for MVP)
+## Settings (optional for MVP)
 
 Purpose: Preferences
 
@@ -183,9 +183,9 @@ Purpose: Preferences
 - Theme
 - Export data
 
-# FOLDER STRUCTURE
+## FOLDER STRUCTURE
 
-`src/
+``src/
 components/ # Reusable UI components
 pages/ # Main page components (Dashboard, Applications, Insights)
 hooks/ # Custom hooks for logic
@@ -196,3 +196,7 @@ data/ # Sample data for testing
 lib/ # Libraries or helpers (e.g. Chart.js setup)
 services/ # Services for analytics, reminders, etc.
 auth/ # Authentication logic (for future features)`
+
+```
+
+```
