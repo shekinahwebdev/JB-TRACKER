@@ -1,12 +1,19 @@
 import { useState } from "react";
-import FilterDropDown from "./FilterDropDown";
 import { initialfilters } from "@/data/constant";
 
 const FilterControl = () => {
   const [filters, setFilters] = useState(initialfilters);
   return (
-    <section className="">
-      <div>
+    <section className="flex flex-row px-4 py-5 relative">
+      <div className="flex gap-4 justify-evenly overflow-visible">
+        {/* <FilterDropDown
+          label="Status"
+          options={
+            Object.keys(filters.status) as (keyof typeof filters.status)[]
+          }
+          state={filters.status}
+          setState={(newState) => setFilters({ ...filters, status: newState })}
+        />
         <FilterDropDown
           label="Status"
           options={
@@ -15,6 +22,22 @@ const FilterControl = () => {
           state={filters.status}
           setState={(newState) => setFilters({ ...filters, status: newState })}
         />
+        <FilterDropDown
+          label="Status"
+          options={
+            Object.keys(filters.status) as (keyof typeof filters.status)[]
+          }
+          state={filters.status}
+          setState={(newState) => setFilters({ ...filters, status: newState })}
+        />{" "}
+        <FilterDropDown
+          label="Status"
+          options={
+            Object.keys(filters.status) as (keyof typeof filters.status)[]
+          }
+          state={filters.status}
+          setState={(newState) => setFilters({ ...filters, status: newState })}
+        /> */}
       </div>
     </section>
   );

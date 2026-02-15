@@ -3,6 +3,7 @@ import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
   DropdownMenuContent,
+  DropdownMenuPortal,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
@@ -13,7 +14,7 @@ interface FilterDropDownProps<T> {
   setState: (newState: T) => void;
 }
 
-const FilterDropDown = <T extends Record<string, boolean>>({
+const FilterDropDown1 = <T extends Record<string, boolean>>({
   label,
   options,
   state,
@@ -21,10 +22,10 @@ const FilterDropDown = <T extends Record<string, boolean>>({
 }: FilterDropDownProps<T>) => {
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger>
-        <Button className="">{label}</Button>
+      <DropdownMenuTrigger asChild>
+        <Button className="bg-orange-600">{label}</Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="">
+      <DropdownMenuContent className="z-50 min-w-[160px] rounded-md border bg-amber-800 p-1 text-white shadow-md">
         {options.map((option) => (
           <DropdownMenuCheckboxItem
             key={option as string}
@@ -41,4 +42,4 @@ const FilterDropDown = <T extends Record<string, boolean>>({
   );
 };
 
-export default FilterDropDown;
+export default FilterDropDown1;
