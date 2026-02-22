@@ -3,7 +3,6 @@ import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
   DropdownMenuContent,
-  DropdownMenuPortal,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
@@ -14,7 +13,7 @@ interface FilterDropDownProps<T> {
   setState: (newState: T) => void;
 }
 
-const FilterDropDown1 = <T extends Record<string, boolean>>({
+const FilterDropDown = <T extends Record<string, boolean>>({
   label,
   options,
   state,
@@ -42,4 +41,4 @@ const FilterDropDown1 = <T extends Record<string, boolean>>({
   );
 };
 
-export default FilterDropDown1;
+export default FilterDropDown;

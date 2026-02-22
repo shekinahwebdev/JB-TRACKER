@@ -12,13 +12,13 @@ interface SideBarItemProps {
 const SideBarItem: React.FC<SideBarItemProps> = ({ icon, text, to, end }) => {
   const { expanded } = useContext(SidebarContext);
   return (
-    <li>
+    <li className="">
       <NavLink
         to={to}
         end={end}
         className={({ isActive }) =>
-          `flex flex-row px-4 py-3 gap-2 ${
-            isActive ? "bg-black text-orange-500" : ""
+          `flex flex-row px-3 py-3 gap-2 ${
+            isActive ? "bg-black text-orange-500 border" : ""
           } justify-center items-center rounded-md hover:bg-black cursor-pointer `
         }
       >

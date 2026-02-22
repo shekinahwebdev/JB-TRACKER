@@ -1,7 +1,7 @@
 import { createBrowserRouter, Navigate } from "react-router-dom";
 import DashBoard from "./pages/dashboard/DashBoard";
-import Application from "./pages/application/Application";
-import Insight from "./pages/insight/Insight";
+import Application from "./pages/applications/Application";
+import Insight from "./pages/analytics/Insight";
 import Settings from "./pages/settings/Settings";
 import DashBoardLayout from "./DashBoardLayout";
 

@@ -3,6 +3,7 @@ import SideBar from "@/components/sidebar/SideBar";
 import SideBarItem from "@/components/sidebar/SideBarItem";
 import { SidebarProvider } from "@/context/SidebarContext";
 import { BarChart, FormIcon, LayoutDashboard, Settings } from "lucide-react";
+import Header from "./components/header/Header";
 
 const DashBoardLayout = () => {
   return (
@@ -39,8 +40,8 @@ const DashBoardLayout = () => {
             to="/mainboard/settings"
           />
         </SideBar>
-
         <div className="w-full  min-h-screen bg-white">
+          <Header />
           <Outlet />
         </div>
       </main>

@@ -183,20 +183,158 @@ Purpose: Preferences
 - Theme
 - Export data
 
+### UPGRADED FEATURES(MVP+)
+
+1. Dashboard Overview
+   • Summary cards showing:
+   • Total Applications
+   • Interviews
+   • Offers
+   • Rejections
+   • Activity feed with recently added applications.
+   • Quick insights:
+   • Applications per week
+   • Interview conversion rate
+   • Quick action button to add a new application.
+
+2. Application Management
+   • Add / Edit / Delete Applications
+   • Application fields include:
+   • Company Name
+   • Job Title / Role
+   • Status: Applied, Interview, Offer, Rejected
+   • Date Applied
+   • Source: LinkedIn, Indeed, Referral, Company Website
+   • Notes (optional)
+   • Update status quickly without deleting applications.
+
+3. Table View
+   • View all applications in a clean, sortable table.
+   • Columns include:
+   • Company Name
+   • Job Role
+   • Status (color-coded badges)
+   • Date Applied
+   • Application Source
+   • Actions: Edit / Delete
+   • Search & Filter:
+   • Search by Company or Role
+   • Filter by Status, Source, or Date Applied
+   • Sort by Newest, Oldest, or Status
+
+4. Kanban Board
+   • Track job applications visually across columns:
+   • Applied
+   • Interview
+   • Offer
+   • Rejected
+   • Drag-and-drop job cards between columns to update status.
+   • Job card includes:
+   • Company Name
+   • Job Role
+   • Date Applied
+   • Source icon (LinkedIn, Indeed, etc.)
+
+5. Analytics
+   • Visual insights into your job search performance:
+   • Total applications
+   • Interview, offer, and rejection rates
+   • Applications by role type or source
+   • Charts include:
+   • Bar charts
+   • Pie charts
+   • Timeline charts
+
+6. UI / UX Enhancements
+   • Clean sidebar navigation & top nav with search, notifications, and profile avatar.
+   • Responsive design for desktop-first experience.
+   • Color-coded statuses for at-a-glance clarity.
+   • Friendly empty states when no applications exist:
+   • “No job applications yet. Start tracking your job search.”
+   • Quick Add Application button
+
+7. Reusable Components
+   • Sidebar & Top Navigation
+   • Buttons, Badges, Dropdowns
+   • Table Rows & Job Cards
+   • Modal dialogs & Forms
+
+8. State Management & Data
+   • Centralized state using React Context / Hooks
+   • Local storage support for MVP
+   • Easy backend integration for persistent data
+
 ## FOLDER STRUCTURE
 
-``src/
-components/ # Reusable UI components
-pages/ # Main page components (Dashboard, Applications, Insights)
-hooks/ # Custom hooks for logic
-context/ # Context API for state management
-utils/ # Utility functions (e.g. local storage)
-api/ # API calls (for future backend integration)
-data/ # Sample data for testing
-lib/ # Libraries or helpers (e.g. Chart.js setup)
-services/ # Services for analytics, reminders, etc.
-auth/ # Authentication logic (for future features)`
-
 ```
-
+jobtrackr/
+│
+├─ public/                           Public assets
+│   ├─ images/                       Logos, icons, illustrations
+│   └─ favicon.ico
+│
+├─ src/
+│   ├─ assets/                       Static assets used in React
+│   │   ├─ icons/
+│   │   └─ illustrations/
+│   │
+│   ├─ components/                   Reusable UI components
+│   │   ├─ Sidebar/
+│   │   │   ├─ Sidebar.tsx
+│   │   │   └─ SidebarItem.tsx
+│   │   ├─ TopNav/
+│   │   │   ├─ TopNav.tsx
+│   │   │   └─ Notification.tsx
+│   │   ├─ Table/
+│   │   │   ├─ ApplicationTable.tsx
+│   │   │   └─ TableRow.tsx
+│   │   ├─ Kanban/
+│   │   │   ├─ KanbanBoard.tsx
+│   │   │   └─ KanbanCard.tsx
+│   │   ├─ Cards/
+│   │   │   ├─ SummaryCard.tsx
+│   │   │   └─ ActivityCard.tsx
+│   │   ├─ Modals/
+│   │   │   └─ AddApplicationModal.tsx
+│   │   ├─ Forms/
+│   │   │   ├─ InputField.tsx
+│   │   │   └─ Dropdown.tsx
+│   │   ├─ Buttons/
+│   │   │   └─ Button.tsx
+│   │   └─ Badges/
+│   │       └─ StatusBadge.tsx
+│   │
+│   ├─ pages/                        Main Pages
+│   │   ├─ Dashboard/
+│   │   │   └─ DashboardPage.tsx
+│   │   ├─ Applications/
+│   │   │   └─ ApplicationsPage.tsx
+│   │   ├─ Analytics/
+│   │   │   └─ AnalyticsPage.tsx
+│   │   └─ Settings/
+│   │       └─ SettingsPage.tsx
+│   │
+│   ├─ contexts/                     Context & global state
+│   │   └─ ApplicationContext.tsx
+│   │
+│   ├─ hooks/                        Custom hooks
+│   │   └─ useApplications.ts
+│   │
+│   ├─ services/                     API calls
+│   │   └─ applicationsAPI.ts
+│   │
+│   ├─ types/                        TypeScript interfaces
+│   │   └─ application.d.ts
+│   │
+│   ├─ utils/                        Utility functions
+│   │   └─ dateFormatter.ts
+│   │
+│   ├─ App.tsx
+│   ├─ index.tsx
+│   └─ routes.tsx
+│
+├─ tailwind.config.js
+├─ postcss.config.js
+├─ package.json
+└─ tsconfig.json
 ```

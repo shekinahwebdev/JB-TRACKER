@@ -30,7 +30,6 @@ const Application = () => {
           <span>Add Application</span>
         </Button>
       </header>
-      <FilterControl />
     </div>
   );
 };
