@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { PlusIcon } from "lucide-react";
-import FilterControl from "./FilterControl";
 import { Link } from "react-router-dom";
 
 const Application = () => {

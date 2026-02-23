@@ -4,6 +4,7 @@ import Application from "./pages/applications/Application";
 import Insight from "./pages/analytics/Insight";
 import Settings from "./pages/settings/Settings";
 import DashBoardLayout from "./DashBoardLayout";
+import Register from "./auth/Register";
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
         element: <Settings />,
       },
     ],
+  },
+  {
+    path: "/register",
+    element: <Register />,
   },
 ]);
 
