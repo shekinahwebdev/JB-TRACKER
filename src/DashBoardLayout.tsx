@@ -8,7 +8,7 @@ import Header from "./components/header/Header";
 const DashBoardLayout = () => {
   return (
     <SidebarProvider>
-      <main className="flex rounded-xl overflow-hidden">
+      <main className="flex h-screen overflow-hidden">
         <SideBar>
           <SideBarItem
             icon={
@@ -40,7 +40,7 @@ const DashBoardLayout = () => {
             to="/mainboard/settings"
           />
         </SideBar>
-        <div className="w-full  min-h-screen bg-white">
+        <div className="w-full min-h-screen bg-white">
           <Header />
           <Outlet />
         </div>
