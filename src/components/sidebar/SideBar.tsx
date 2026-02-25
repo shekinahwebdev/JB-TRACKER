@@ -6,8 +6,8 @@ import { useContext, type ReactNode } from "react";
 const SideBar = ({ children }: { children: ReactNode }) => {
   const { expanded, handleExpand } = useContext(SidebarContext);
   return (
-    <aside className="h-screen border-r border-white/25 shadow-md rounded-l-xl">
-      <nav className="h-full flex flex-col  bg-white p-5 rounded-l-xl">
+    <aside className="border-r border-white/25 shadow-md">
+      <nav className="h-full flex flex-col  bg-white px-5">
         <div className="p-6 flex items-center justify-between gap-10">
           <p
             className={`font-bold text-xl text-orange-600 transition-all ${
@@ -30,7 +30,7 @@ const SideBar = ({ children }: { children: ReactNode }) => {
           </Button>
         </div>
 
-        <ul className="flex flex-col gap-10">{children}</ul>
+        <ul className="flex flex-col gap-10 flex-1">{children}</ul>
       </nav>
     </aside>
   );
