@@ -68,7 +68,7 @@ const SideBar = ({ children }: { children: ReactNode }) => {
         )}
 
         <div
-          className={`border border-gray-400 rounded-2xl my-4 py-2 px-2 flex ${expanded ? "flex-row" : "flex-col"} gap-3`}
+          className={`border border-gray-400 rounded-2xl my-4 py-2 px-2 flex ${expanded ? "flex-row" : "flex-col items-center"} gap-3`}
         >
           <Link to="/mainboard/settings">
             <Button className="bg-[rgb(var(--primary))] rounded-xl text-[rgb(var(--background))]">
