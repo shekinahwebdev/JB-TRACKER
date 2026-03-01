@@ -8,7 +8,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
-export function SortOptionDemo() {
+export function StatusDemo() {
   return (
     <Select>
       <SelectTrigger className="w-full max-w-42.5  border border-black/30">
@@ -18,11 +18,10 @@ export function SortOptionDemo() {
       <SelectContent>
         <SelectGroup>
           <SelectLabel className="">Default</SelectLabel>
-          <SelectItem value="apple">Last Added</SelectItem>
-          <SelectItem value="banana">Recent Added</SelectItem>
-          <SelectItem value="blueberry">Newest Action</SelectItem>
-          <SelectItem value="grapes">Oldest Action</SelectItem>
-          {/* <SelectItem value="pineapple">Pineapple</SelectItem> */}
+          <SelectItem value="apple">Applied</SelectItem>
+          <SelectItem value="banana">Interview</SelectItem>
+          <SelectItem value="blueberry">Accepted</SelectItem>
+          <SelectItem value="grapes">Rejected</SelectItem>
         </SelectGroup>
       </SelectContent>
     </Select>
