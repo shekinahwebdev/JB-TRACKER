@@ -12,7 +12,7 @@ interface SideBarItemProps {
 const SideBarItem: React.FC<SideBarItemProps> = ({ icon, text, to, end }) => {
   const { expanded } = useContext(SidebarContext);
   return (
-    <li className="">
+    <li>
       <NavLink
         to={to}
         end={end}
