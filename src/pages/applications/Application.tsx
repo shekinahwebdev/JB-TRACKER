@@ -1,3 +1,4 @@
+import KanbanBoard from "@/components/kanban/KanbanBoard";
 import { SortOptionDemo } from "@/components/SelectDemo";
 import { StatusDemo } from "@/components/StatusDemo";
 import ApplicationTable from "@/components/table/ApplicationTable";
@@ -27,8 +28,8 @@ const Application = () => {
       </div>
       <header className="flex flex-row justify-between items-center pt-4 pb-3 border-b border-[rgb(var(--primary))] px-4">
         <div>
-          <h1 className="text-2xl pb-2">Job Applications</h1>
-          <p className="text-[rgb(var(--primary))]">
+          <h1 className="text-xl pb-2">Job Applications</h1>
+          <p className="text-[rgb(var(--primary))] text-sm">
             Track, manage and analyze your job hunt
           </p>
         </div>
@@ -68,7 +69,7 @@ const Application = () => {
           </div>
         </section>
         <div className="mt-3 flex items-center justify-between text-sm text-red-500">
-          <p className="text-xs">2 items removed</p>
+          <p className="text-xs text-[rgb(var(--primary))]">2 items removed</p>
           <div className="flex items-center gap-2">
             <Button
               size="sm"
@@ -80,7 +81,7 @@ const Application = () => {
 
             <Button
               size="sm"
-              className="border border-gray-100 rounded-sm text-xs hover:bg-white hover:shadow-sm  text-[rgb(var(--primary))] "
+              className="border text-black border-gray-100 rounded-sm text-xs hover:bg-white hover:shadow-sm"
             >
               <RefreshCcw size={12} />
             </Button>
@@ -88,6 +89,7 @@ const Application = () => {
         </div>
       </div>
       <ApplicationTable />
+      {/* <KanbanBoard /> */}
     </div>
   );
 };

@@ -8,6 +8,7 @@ const headers = [
   { label: "Status" },
   { label: "Source" },
   { label: "Contact" },
+  { label: "Date Added" },
   { label: "Quick Action" },
 ];
 
@@ -25,14 +26,16 @@ const ApplicationTable = () => {
             />
           </div>
           <div className="flex items-center gap-2 text-xs">
-            <span>Showing</span>
+            <span className="text-gray-500">Showing</span>
             <Button
               size="sm"
-              className="bg-gray-100 rounded-sm text-xs hover:bg-white hover:shadow-sm"
+              className="bg-black border-2 border-[rgb(var(--primary))] rounded-sm text-xs hover:bg-[rgb(var(--primary))] hover:shadow-sm hover:border-[rgb(var(--black))]"
             >
-              <span className="text-[rgb(var(--primary))]">26</span>
+              <span className="text-[rgb(var(--primary))]  hover:text-black">
+                26
+              </span>
             </Button>
-            <span>of 56 results</span>
+            <span className="text-[13px] text-gray-500">of 56 results</span>
           </div>
         </div>
 
@@ -52,39 +55,44 @@ const ApplicationTable = () => {
           </thead>
 
           <tbody>
-            <tr className="border border-gray-100">
+            <tr className="border border-gray-100 hover:bg-orange-100 hover:cursor-pointer">
               <td className="py-3 pl-4">
                 <div className="flex items-center gap-3 h-full">
                   <input
                     type="checkbox"
-                    className="checkbox-custom"
+                    className="checkbox-custom accent-orange-500 hover:cursor-pointer"
                     onClick={(e) => e.stopPropagation()}
                   />
-                  <span className="text-sm">Vercel</span>
+                  <span className="text-xs">Vercel</span>
                 </div>
               </td>
               {/* Role */}
-              <td className="py-3 text-center text-sm">Frontend</td>
+              <td className="py-3 text-center text-xs">Frontend</td>
 
-              <td className="py-3 text-center text-sm">Technology</td>
+              <td className="py-3 text-center text-xs">Technology</td>
 
-              <td className="py-3 text-center text-sm">Accepted</td>
+              <td className="py-3 text-center text-xs">
+                <span className="bg-gray-100 p-2 rounded-xl">Accepted</span>
+              </td>
 
-              <td className="py-3 text-center text-sm">LinkedIn</td>
+              <td className="py-3 text-center text-xs">LinkedIn</td>
 
               <td className=" flex flex-col  items-center px-3 py-3 ">
                 <div className="flex flex-row items-center justify-center gap-1 text-sm">
                   <Mail size={13} />
-                  <span className="text-sm">patricia@gmail.com</span>
+                  <span className="text-xs">patricia@gmail.com</span>
                 </div>
                 <div className="flex flex-row items-center justify-center gap-1 text-sm">
                   <PhoneCall size={13} />
-                  <span className="text-sm">+233245124218</span>
+                  <span className="text-xs">+233245124218</span>
                 </div>
               </td>
+
+              <td className="py-3 text-center text-xs">Today at 12:40PM</td>
+
               <td className="py-3 pl-2">
                 <div className="flex flex-row items-center gap-2">
-                  <span className="text-sm">Edit</span>
+                  <span className="text-xs">Edit</span>
                   <Button
                     size="sm"
                     className="rounded-sm text-xs hover:bg-white hover:shadow-sm border border-gray-100"
@@ -103,34 +111,37 @@ const ApplicationTable = () => {
                 <div className="flex items-center gap-3 h-full">
                   <input
                     type="checkbox"
-                    className="checkbox-custom"
+                    className="checkbox-custom  accent-orange-500"
                     onClick={(e) => e.stopPropagation()}
                   />
                   <span className="text-sm">Vercel</span>
                 </div>
               </td>
               {/* Role */}
-              <td className="py-3 text-center text-sm">Frontend</td>
+              <td className="py-3 text-center text-xs">Frontend</td>
 
-              <td className="py-3 text-center text-sm">Technology</td>
+              <td className="py-3 text-center text-xs">Technology</td>
 
-              <td className="py-3 text-center text-sm">Accepted</td>
+              <td className="py-3 text-center text-xs">Accepted</td>
 
-              <td className="py-3 text-center text-sm">LinkedIn</td>
+              <td className="py-3 text-center text-xs">LinkedIn</td>
 
               <td className=" flex flex-col  items-center px-3 py-3">
                 <div className="flex flex-row items-center justify-center gap-1 text-sm">
                   <Mail size={13} />
-                  <span className="text-sm">patricia@gmail.com</span>
+                  <span className="text-xs">patricia@gmail.com</span>
                 </div>
                 <div className="flex flex-row items-center justify-center gap-1 text-sm">
                   <PhoneCall size={13} />
-                  <span className="text-sm">+233245124218</span>
+                  <span className="text-xs">+233245124218</span>
                 </div>
               </td>
+
+              <td className="py-3 text-center text-xs">Today at 12:40PM</td>
+
               <td className="py-3 pl-2">
                 <div className="flex flex-row items-center gap-2">
-                  <span className="text-sm">Edit</span>
+                  <span className="text-xs">Edit</span>
                   <Button
                     size="sm"
                     className="rounded-sm text-xs hover:bg-white hover:shadow-sm border border-gray-100"

@@ -199,3 +199,13 @@ body {
   align-items: center; */
   /* padding: 1rem; */
 }
+
+::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff6a00;
+  border-radius: 10px;
+}
