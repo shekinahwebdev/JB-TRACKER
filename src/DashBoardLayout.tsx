@@ -40,7 +40,7 @@ const DashBoardLayout = () => {
             to="/mainboard/calender"
           />
         </SideBar>
-        <div className="w-full min-h-screen bg-white">
+        <div className="w-full flex-1 min-w-0 min-h-screen bg-white">
           <Header />
           <Outlet />
         </div>
