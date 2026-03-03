@@ -3,7 +3,7 @@ import { Button } from "../ui/button";
 
 const KanbanCard = () => {
   return (
-    <div className="border-2  border-[rgb(var(--primary))] bg-black text-orange-500 rounded px-4 py-2 w-full text-sm flex flex-col justify-center gap-1 transition hover:shadow-lg hover:-translate-y-0.5">
+    <div className="border-2  border-[rgb(var(--primary))] border-gray-300 bg-gray-100 text-orange-500 rounded px-4 py-2 w-full text-sm flex flex-col justify-center gap-1 transition hover:shadow-lg hover:-translate-y-0.5">
       <div className="flex flex-row justify-between items-center">
         <h2 className="text-sm">Vercel</h2>
         <Button

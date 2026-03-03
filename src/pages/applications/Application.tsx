@@ -88,8 +88,8 @@ const Application = () => {
           </div>
         </div>
       </div>
-      <ApplicationTable />
-      {/* <KanbanBoard /> */}
+      {/* <ApplicationTable /> */}
+      <KanbanBoard />
     </div>
   );
 };
